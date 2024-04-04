@@ -10,7 +10,6 @@ with open(pybank_csv) as csv_file:
 
 #skip reading header
     csv_header = next(csv_reader)
-    print(f"CSV Header: {csv_header}")
 
 #intialize list
     profit = []
@@ -60,10 +59,10 @@ with open(pybank_csv) as csv_file:
       
 print(f"\nFinancial Analysis")
 print("-------------------------------------------------------------")
-print(f"Total Months: {month}")
+print(f"Total Months: ({month})")
 print(f"Net Profit: {total}")
 print(f"Average Change: ${average_change}")
-print(f"Greatest Increase in Profits: {best_month} {maximum}")
-print(f"Greatest Decrease in Profits: {worst_month} {minimum}")
+print("Greatest Increase in Profits: " + str(best_month) + " ($" + str(maximum) + ")")
+print("Greatest Decrease in Profits: " + str(worst_month) + " ($" + str(minimum) + ")")
 
    

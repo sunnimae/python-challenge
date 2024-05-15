@@ -52,7 +52,7 @@ print("Raymon Anthony Doane:" + str(raymon_percent) + "% (" + str(raymon_count) 
 print(f"\nWinner: {winner}")
 print("\n--------------------------------------------")
 
-
+# export to textfile
 output_file = os.path.join("output.txt")
 
 with open(output_file, "w") as txtfile:
